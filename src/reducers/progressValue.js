@@ -10,10 +10,10 @@ export const progressValue = (state = initialState, action) => {
   switch (action.type) {
 
     case PROGRESS_INCREASE:
-      return action.value;
+      return state + 1;
 
     case PROGRESS_DECREASE:
-      return action.value;
+      return state - 1;
 
     default:
       return state

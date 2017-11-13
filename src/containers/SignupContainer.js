@@ -16,8 +16,6 @@ class SignupContainer extends PureComponent {
 
   render() {
 
-    console.log(styles)
-
     this.view = '';
 
     switch (this.props.currentView) {
@@ -32,18 +30,9 @@ class SignupContainer extends PureComponent {
         break;
     }
 
-
-
     return(
       <div className='signup-container'>
-
-        {/*<SignupHeader />*/}
-
-
           { this.view }
-
-
-
       </div>
     )
   }

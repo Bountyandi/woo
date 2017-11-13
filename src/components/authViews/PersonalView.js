@@ -1,10 +1,12 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { setPersonalData, switchView } from '../../actions/actions';
+import { setPersonalData, increaseProgress } from '../../actions/actions';
 import { attractionCanalsData } from '../../helpers/attractionCanalsData';
 import SignupHeader from '../SignupHeader';
 import ViewsFsm from '../../actions/ViewsFsmInstance';
+import Validator from '../../helpers/validator';
+
 
 import {
   Input,
@@ -76,5 +78,5 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, { setPersonalData, switchView })(PersonalView)
+export default connect(mapStateToProps, { setPersonalData, increaseProgress })(PersonalView)
 

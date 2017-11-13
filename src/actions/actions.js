@@ -1,6 +1,4 @@
 import * as types from './actionsTypes'
-import { PROGRESS_INCREASE } from './actionsTypes';
-
 
 export const switchView = viewName => {
   return {

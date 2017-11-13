@@ -8,9 +8,7 @@ export default class App extends PureComponent {
 
     return (
       <Container>
-
         <SignupContainer />
-
       </Container>
     )
   }
